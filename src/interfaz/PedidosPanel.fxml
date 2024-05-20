@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="499.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PedidosController">
+    <children>
+        <TableView fx:id="pedidoTableView" layoutX="15.0" layoutY="14.0" prefHeight="430.0" prefWidth="650.0" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="idPedidoColumn" prefWidth="98.39996528625488" text="ID Pedido" />
+                <TableColumn fx:id="nieClienteColumn" prefWidth="131.20000457763672" text="NIE Cliente" />
+                <TableColumn fx:id="tipoTintaColumn" prefWidth="124.0" text="Tipo Tinta" />
+                <TableColumn fx:id="cantidadColumn" prefWidth="96.0" text="Cantidad" />
+                <TableColumn fx:id="fechaPedidoColumn" maxWidth="342.3999938964844" prefWidth="200.80001831054688" text="Fecha Pedido" />
+            </columns>
+        </TableView>
+        <Button layoutX="287.0" layoutY="458.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="25.0" prefWidth="106.0" text="Cerrar" />
+    </children>
+</AnchorPane>
